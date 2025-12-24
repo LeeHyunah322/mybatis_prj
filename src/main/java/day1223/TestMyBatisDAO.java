@@ -41,7 +41,7 @@ public class TestMyBatisDAO {
 	public static void main(String[] args) {
 		try {
 //		new TestMyBatisDAO().insertBoard();
-		DeptDTO dDTO=new DeptDTO(50, "QA","경기도");
+		DeptDTO dDTO=new DeptDTO(60, "QA","경기도");
 		new TestMyBatisDAO().insertCpDept2(dDTO);
 		}catch(PersistenceException pe){
 			System.err.println("문제 발생");
